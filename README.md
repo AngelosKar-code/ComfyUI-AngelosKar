@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon.png" width="160" height="160" alt="ComfyUI-AngelosKar Logo">
+  <img src="https://raw.githubusercontent.com/AngelosKar-code/ComfyUI-AngelosKar/main/icon.png" width="160" height="160" alt="ComfyUI-AngelosKar Logo">
 </p>
 
 # ComfyUI-AngelosKar
@@ -14,6 +14,7 @@ A clean, modular custom node pack for [ComfyUI](https://github.com/comfyanonymou
 * **VRAM-Safe List Execution**: Outputs images as Python lists rather than heavy 4D tensors, enabling ComfyUI list mapping to process images individually.
 * **Canvas Tag Controllers**: Dynamically Bypass or Mute canvas nodes simply by adding tags (e.g., `[RMBG]`, `[PREVIEW]`) to their titles.
 * **Multi-Garment VTON Mode Control**: Switch between 1 to 5 garments dynamically with automatic canvas muting for `[G2]`, `[G3]`, `[G4]`, `[G5]`.
+* **Built-in VTON Example Workflows**: 1-Garment & 2-Garments production workflows included with drag-and-drop embedded PNGs and JSON files.
 * **Native Windows Folder Dialog**: Open modern Windows Explorer folder picker directly from the node.
 * **One-Click Counter Resets**: Interactive frontend buttons to instantly reset batch progress without restarting ComfyUI.
 
@@ -68,6 +69,46 @@ A clean, modular custom node pack for [ComfyUI](https://github.com/comfyanonymou
 
 * **📂 AK Folder Path Picker (`AK_FolderPicker`)**
   * Interactive node with a **📂 Browse Folder** button that opens the native Windows Explorer folder selection dialog and outputs the selected folder path string.
+
+---
+
+## 💡 Example Workflows
+
+The repository includes ready-to-use production Virtual Try-On (VTON) workflows located in the [`example_workflows/`](example_workflows/) directory.
+
+> [!TIP]
+> **Drag & Drop Ready**: You can directly drag and drop either of the output images below into your ComfyUI canvas to load the entire workflow!
+> You can also load the `.json` files via ComfyUI's **Load** button, or access them directly from ComfyUI's native **Templates** menu (`example_workflows`).
+
+---
+
+### 1. 👗 Single Garment VTON (`AK_VIRTUAL_TRY_ON_1_GARMENT_EXAMPLE`)
+
+* **Garment Mode Controller**: Set to **1 Garment** via `AK_GarmentModeController` (automatically mutes garment paths `[G2]`, `[G3]`, `[G4]`, `[G5]`).
+* **Model Input**: **Active** via `AK_TagMuter` (`[MODEL]`), passing through an existing reference model photo into the try-on pipeline.
+* **Automated Batch Processing**: Uses `AK_AutoImageListLoader` and `AK_FolderPicker` to batch-process garment images sequentially with full resolution preservation.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AngelosKar-code/ComfyUI-AngelosKar/main/example_workflows/AK_VIRTUAL_TRY_ON_1_GARMENT_EXAMPLE.png" width="600" alt="1 Garment VTON Workflow Output (Drag & Drop to ComfyUI)">
+</p>
+
+* 🖼️ **Drag & Drop Image**: [AK_VIRTUAL_TRY_ON_1_GARMENT_EXAMPLE.png](https://raw.githubusercontent.com/AngelosKar-code/ComfyUI-AngelosKar/main/example_workflows/AK_VIRTUAL_TRY_ON_1_GARMENT_EXAMPLE.png)
+* 📄 **Raw Workflow JSON**: [AK_VIRTUAL_TRY_ON_1_GARMENT_EXAMPLE.json](https://raw.githubusercontent.com/AngelosKar-code/ComfyUI-AngelosKar/main/example_workflows/AK_VIRTUAL_TRY_ON_1_GARMENT_EXAMPLE.json)
+
+---
+
+### 2. 👔 2 Garments VTON (`AK_VIRTUAL_TRY_ON_2_GARMENTS_EXAMPLE`)
+
+* **Garment Mode Controller**: Set to **2 Garments** via `AK_GarmentModeController` (keeps `[G2]` active while muting `[G3..G5]`).
+* **Model Input**: **Muted** via `AK_TagMuter` (`[MODEL]`). In this configuration, no external reference model photo is needed — the model (a 5-year-old boy) is synthesized directly on-the-fly from the text prompt!
+* **Multi-Garment Pipeline**: Loads and coordinates multiple garment folders simultaneously via independent `AK_AutoImageListLoader` instances and applies both garments to the synthesized model.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AngelosKar-code/ComfyUI-AngelosKar/main/example_workflows/AK_VIRTUAL_TRY_ON_2_GARMENTS_EXAMPLE.png" width="600" alt="2 Garments VTON Workflow Output (Drag & Drop to ComfyUI)">
+</p>
+
+* 🖼️ **Drag & Drop Image**: [AK_VIRTUAL_TRY_ON_2_GARMENTS_EXAMPLE.png](https://raw.githubusercontent.com/AngelosKar-code/ComfyUI-AngelosKar/main/example_workflows/AK_VIRTUAL_TRY_ON_2_GARMENTS_EXAMPLE.png)
+* 📄 **Raw Workflow JSON**: [AK_VIRTUAL_TRY_ON_2_GARMENTS_EXAMPLE.json](https://raw.githubusercontent.com/AngelosKar-code/ComfyUI-AngelosKar/main/example_workflows/AK_VIRTUAL_TRY_ON_2_GARMENTS_EXAMPLE.json)
 
 ---
 

@@ -1,0 +1,2202 @@
+{
+  "id": "1556a46c-3b7b-443d-aaee-fcc916595a66",
+  "revision": 0,
+  "last_node_id": 76,
+  "last_link_id": 193,
+  "nodes": [
+    {
+      "id": 16,
+      "type": "ImageResize+",
+      "pos": [
+        6043.262942610644,
+        4909.594481911175
+      ],
+      "size": [
+        421.265625,
+        319.96875
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            147,
+            149,
+            190
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": []
+        }
+      ],
+      "title": "🔧 Image Resize 2 [G2]",
+      "properties": {
+        "cnr_id": "comfyui_essentials",
+        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
+        "Node name for S&R": "ImageResize+"
+      },
+      "widgets_values": [
+        2048,
+        2048,
+        "lanczos",
+        "keep proportion",
+        "downscale if bigger",
+        0
+      ],
+      "widgets_values_named": {
+        "width": 2048,
+        "height": 2048,
+        "interpolation": "lanczos",
+        "method": "keep proportion",
+        "condition": "downscale if bigger",
+        "multiple_of": 0
+      }
+    },
+    {
+      "id": 22,
+      "type": "orex Save Image",
+      "pos": [
+        8652.01518315842,
+        5806.56317902926
+      ],
+      "size": [
+        308.09375,
+        410
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 57
+        },
+        {
+          "name": "output_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_path"
+          },
+          "link": 56
+        },
+        {
+          "name": "filename_prefix_1",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix_1"
+          },
+          "link": 69
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "saved_path",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "filename_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "💾 Save Image seedance",
+      "properties": {
+        "cnr_id": "comfyui-orex",
+        "ver": "1364955ea21926a8708f2f8d72c6b6ef527403c5",
+        "Node name for S&R": "orex Save Image",
+        "aux_id": "orex2121/comfyui-OreX"
+      },
+      "widgets_values": [
+        "C:\\Users\\info\\Desktop\\geminiout\\outofout",
+        false,
+        true,
+        "",
+        "",
+        "see",
+        "",
+        false,
+        false,
+        false,
+        "png",
+        90,
+        90,
+        false
+      ],
+      "widgets_values_named": {
+        "active": "C:\\Users\\info\\Desktop\\geminiout\\outofout",
+        "output_path": false,
+        "create_current_date_folder": true,
+        "create_processed_folder": "",
+        "filename_prefix_1": "",
+        "filename_prefix_2": "see",
+        "filename_prefix_3": "",
+        "filename_separator": false,
+        "use_counter": false,
+        "embed_workflow": false,
+        "image_format": "png",
+        "jpg_quality": 90,
+        "webp_quality": 90,
+        "optimize_png": false
+      },
+      "color": "#000000",
+      "bgcolor": "#0f0f0f"
+    },
+    {
+      "id": 15,
+      "type": "ImageResize+",
+      "pos": [
+        6078.709380841384,
+        4484.823410082306
+      ],
+      "size": [
+        421.265625,
+        319.96875
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 15
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            144,
+            146,
+            189
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": []
+        }
+      ],
+      "title": "🔧 Image Resize 1",
+      "properties": {
+        "cnr_id": "comfyui_essentials",
+        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
+        "Node name for S&R": "ImageResize+"
+      },
+      "widgets_values": [
+        2048,
+        2048,
+        "lanczos",
+        "keep proportion",
+        "downscale if bigger",
+        0
+      ],
+      "widgets_values_named": {
+        "width": 2048,
+        "height": 2048,
+        "interpolation": "lanczos",
+        "method": "keep proportion",
+        "condition": "downscale if bigger",
+        "multiple_of": 0
+      }
+    },
+    {
+      "id": 21,
+      "type": "orex Save Image",
+      "pos": [
+        8607.296654258593,
+        4541.8197381340515
+      ],
+      "size": [
+        308.09375,
+        410
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 58
+        },
+        {
+          "name": "output_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_path"
+          },
+          "link": 54
+        },
+        {
+          "name": "filename_prefix_1",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix_1"
+          },
+          "link": 67
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "saved_path",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "filename_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "💾 Save Image GEMINI FLASH 2.5",
+      "properties": {
+        "cnr_id": "comfyui-orex",
+        "ver": "1364955ea21926a8708f2f8d72c6b6ef527403c5",
+        "Node name for S&R": "orex Save Image",
+        "aux_id": "orex2121/comfyui-OreX"
+      },
+      "widgets_values": [
+        "C:\\Users\\info\\Desktop\\geminiout\\outofout",
+        false,
+        true,
+        "",
+        "",
+        "banana",
+        "",
+        "false",
+        false,
+        true,
+        "png",
+        90,
+        90,
+        false
+      ],
+      "widgets_values_named": {
+        "active": "C:\\Users\\info\\Desktop\\geminiout\\outofout",
+        "output_path": false,
+        "create_current_date_folder": true,
+        "create_processed_folder": "",
+        "filename_prefix_1": "",
+        "filename_prefix_2": "banana",
+        "filename_prefix_3": "",
+        "filename_separator": "false",
+        "use_counter": false,
+        "embed_workflow": true,
+        "image_format": "png",
+        "jpg_quality": 90,
+        "webp_quality": 90,
+        "optimize_png": false
+      },
+      "color": "#000000",
+      "bgcolor": "#0f0f0f"
+    },
+    {
+      "id": 27,
+      "type": "ByteDanceSeedreamNodeV3",
+      "pos": [
+        8050.372283882994,
+        5815.626855906217
+      ],
+      "size": [
+        421.54211318807575,
+        428
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 72
+        },
+        {
+          "name": "model.images.image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 146
+        },
+        {
+          "name": "model.images.image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 149
+        },
+        {
+          "name": "model.images.image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 152
+        },
+        {
+          "name": "model.images.image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 155
+        },
+        {
+          "name": "model.images.image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 188
+        },
+        {
+          "name": "model.images.image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            57
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.6",
+        "Node name for S&R": "ByteDanceSeedreamNodeV3"
+      },
+      "widgets_values": [
+        "",
+        "seedream 5.0 pro",
+        "(2K) 1664x2496 (2:3)",
+        2048,
+        2048,
+        "standard",
+        1813240166,
+        "randomize",
+        false,
+        true,
+        "randomize"
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "model": "seedream 5.0 pro",
+        "model.size_preset": "(2K) 1664x2496 (2:3)",
+        "model.width": 2048,
+        "model.height": 2048,
+        "model.prompt_optimization": "standard",
+        "model.seed": 1813240166,
+        "control_after_generate#1": "randomize",
+        "model.watermark": false,
+        "model.thinking": true,
+        "control_after_generate": "randomize"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 20,
+      "type": "orex Save Image",
+      "pos": [
+        8633.577928773877,
+        5205.285088352459
+      ],
+      "size": [
+        308.09375,
+        410
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 59
+        },
+        {
+          "name": "output_path",
+          "type": "STRING",
+          "widget": {
+            "name": "output_path"
+          },
+          "link": 55
+        },
+        {
+          "name": "filename_prefix_1",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix_1"
+          },
+          "link": 68
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "saved_path",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "filename_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "💾 Save Image GPT",
+      "properties": {
+        "cnr_id": "comfyui-orex",
+        "ver": "1364955ea21926a8708f2f8d72c6b6ef527403c5",
+        "Node name for S&R": "orex Save Image",
+        "aux_id": "orex2121/comfyui-OreX"
+      },
+      "widgets_values": [
+        "C:\\Users\\info\\Desktop\\geminiout\\outofout",
+        false,
+        true,
+        "",
+        "",
+        "gpt",
+        "",
+        false,
+        false,
+        false,
+        "png",
+        90,
+        90,
+        false
+      ],
+      "widgets_values_named": {
+        "active": "C:\\Users\\info\\Desktop\\geminiout\\outofout",
+        "output_path": false,
+        "create_current_date_folder": true,
+        "create_processed_folder": "",
+        "filename_prefix_1": "",
+        "filename_prefix_2": "gpt",
+        "filename_prefix_3": "",
+        "filename_separator": false,
+        "use_counter": false,
+        "embed_workflow": false,
+        "image_format": "png",
+        "jpg_quality": 90,
+        "webp_quality": 90,
+        "optimize_png": false
+      },
+      "color": "#000000",
+      "bgcolor": "#0f0f0f"
+    },
+    {
+      "id": 9,
+      "type": "AK_FolderPicker",
+      "pos": [
+        4011.2212616092575,
+        3686.8844105628323
+      ],
+      "size": [
+        378.9857758497168,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "title": "📂 Garment 2 Path[G2]",
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_FolderPicker"
+      },
+      "widgets_values": [
+        "browse",
+        "C:\\Users\\satir\\OneDrive\\Desktop\\realtemp\\2 garments\\bottom"
+      ],
+      "widgets_values_named": {
+        "📂 Browse Folder": "browse",
+        "folder_path": "C:\\Users\\satir\\OneDrive\\Desktop\\realtemp\\2 garments\\bottom"
+      }
+    },
+    {
+      "id": 8,
+      "type": "AK_FolderPicker",
+      "pos": [
+        4013.1824409735486,
+        3820.560144193207
+      ],
+      "size": [
+        381.3475124789039,
+        82
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "title": "📂 Garment 3 Path[G3]",
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_FolderPicker"
+      },
+      "widgets_values": [
+        "browse",
+        "C:\\Users\\satir\\Downloads\\origin_tech"
+      ],
+      "widgets_values_named": {
+        "📂 Browse Folder": "browse",
+        "folder_path": "C:\\Users\\satir\\Downloads\\origin_tech"
+      }
+    },
+    {
+      "id": 38,
+      "type": "AK_FolderPicker",
+      "pos": [
+        4012.8959169165823,
+        3963.0563320816887
+      ],
+      "size": [
+        381.3475124789039,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "title": "📂 Garment 4 Path[G4]",
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_FolderPicker"
+      },
+      "widgets_values": [
+        "browse",
+        "C:\\Users\\satir\\Downloads\\origin_tech"
+      ],
+      "widgets_values_named": {
+        "📂 Browse Folder": "browse",
+        "folder_path": "C:\\Users\\satir\\Downloads\\origin_tech"
+      }
+    },
+    {
+      "id": 40,
+      "type": "ImageResize+",
+      "pos": [
+        6092.701503577782,
+        5830.557667972335
+      ],
+      "size": [
+        421.265625,
+        319.96875
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 63
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            153,
+            155,
+            192
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": []
+        }
+      ],
+      "title": "🔧 Image Resize 4[G4]",
+      "properties": {
+        "cnr_id": "comfyui_essentials",
+        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
+        "Node name for S&R": "ImageResize+"
+      },
+      "widgets_values": [
+        2048,
+        2048,
+        "lanczos",
+        "keep proportion",
+        "downscale if bigger",
+        0
+      ],
+      "widgets_values_named": {
+        "width": 2048,
+        "height": 2048,
+        "interpolation": "lanczos",
+        "method": "keep proportion",
+        "condition": "downscale if bigger",
+        "multiple_of": 0
+      }
+    },
+    {
+      "id": 39,
+      "type": "AK_AutoImageListLoader",
+      "pos": [
+        5595.808323069807,
+        5830.601216210156
+      ],
+      "size": [
+        336.1151669495939,
+        350
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "images",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": [
+            63
+          ]
+        },
+        {
+          "name": "filenames",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "total_images",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "run_counter",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "total_runs",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "folder_analysis",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "🔄 AK Auto Image List Loader[G4]",
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_AutoImageListLoader"
+      },
+      "widgets_values": [
+        "C:\\",
+        "browse",
+        10,
+        "*",
+        "natural",
+        "on",
+        "start",
+        true,
+        "reset"
+      ],
+      "widgets_values_named": {
+        "folder_path": "C:\\",
+        "📂 Browse Folder": "browse",
+        "list_size": 10,
+        "file_pattern": "*",
+        "sorting": "natural",
+        "load_remainder": "on",
+        "remainder_position": "start",
+        "file_name_without_extension": true,
+        "🔄 Reset Counter": "reset"
+      }
+    },
+    {
+      "id": 5,
+      "type": "AK_AutoImageListLoader",
+      "pos": [
+        5587.796433832289,
+        5357.869941014599
+      ],
+      "size": [
+        326.3046875,
+        350
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "widget": {
+            "name": "folder_path"
+          },
+          "link": 3
+        },
+        {
+          "name": "list_size",
+          "type": "INT",
+          "widget": {
+            "name": "list_size"
+          },
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": [
+            62
+          ]
+        },
+        {
+          "name": "filenames",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "total_images",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "run_counter",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "total_runs",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "folder_analysis",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "🔄 AK Auto Image List Loader [G3]",
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_AutoImageListLoader"
+      },
+      "widgets_values": [
+        "C:\\",
+        "browse",
+        10,
+        "*",
+        "natural",
+        "on",
+        "start",
+        true,
+        "reset"
+      ],
+      "widgets_values_named": {
+        "folder_path": "C:\\",
+        "📂 Browse Folder": "browse",
+        "list_size": 10,
+        "file_pattern": "*",
+        "sorting": "natural",
+        "load_remainder": "on",
+        "remainder_position": "start",
+        "file_name_without_extension": true,
+        "🔄 Reset Counter": "reset"
+      }
+    },
+    {
+      "id": 4,
+      "type": "AK_AutoImageListLoader",
+      "pos": [
+        5577.467395058658,
+        4888.398824445656
+      ],
+      "size": [
+        326.3046875,
+        350
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "widget": {
+            "name": "folder_path"
+          },
+          "link": 2
+        },
+        {
+          "name": "list_size",
+          "type": "INT",
+          "widget": {
+            "name": "list_size"
+          },
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": [
+            16
+          ]
+        },
+        {
+          "name": "filenames",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "total_images",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "run_counter",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "total_runs",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "folder_analysis",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "🔄 AK Auto Image List Loader [G2]",
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_AutoImageListLoader"
+      },
+      "widgets_values": [
+        "C:\\",
+        "browse",
+        10,
+        "*",
+        "natural",
+        "on",
+        "start",
+        true,
+        "reset"
+      ],
+      "widgets_values_named": {
+        "folder_path": "C:\\",
+        "📂 Browse Folder": "browse",
+        "list_size": 10,
+        "file_pattern": "*",
+        "sorting": "natural",
+        "load_remainder": "on",
+        "remainder_position": "start",
+        "file_name_without_extension": true,
+        "🔄 Reset Counter": "reset"
+      }
+    },
+    {
+      "id": 25,
+      "type": "OpenAIGPTImageNodeV2",
+      "pos": [
+        8023.448713610978,
+        5196.7957927164325
+      ],
+      "size": [
+        400,
+        424
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 71
+        },
+        {
+          "name": "model.images.image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 189
+        },
+        {
+          "name": "model.images.image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 190
+        },
+        {
+          "name": "model.images.image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 191
+        },
+        {
+          "name": "model.images.image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 192
+        },
+        {
+          "name": "model.images.image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 193
+        },
+        {
+          "name": "model.images.image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "model.mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            59
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.6",
+        "Node name for S&R": "OpenAIGPTImageNodeV2"
+      },
+      "widgets_values": [
+        "",
+        "gpt-image-2.5-flare",
+        "auto",
+        1024,
+        1024,
+        "auto",
+        "high",
+        1,
+        322799165,
+        "fixed"
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "model": "gpt-image-2.5-flare",
+        "model.size": "auto",
+        "model.custom_width": 1024,
+        "model.custom_height": 1024,
+        "model.background": "auto",
+        "model.quality": "high",
+        "n": 1,
+        "seed": 322799165,
+        "control_after_generate": "fixed"
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 24,
+      "type": "GeminiNanoBanana2V2",
+      "pos": [
+        8039.291991101756,
+        4544.008473682431
+      ],
+      "size": [
+        528.7361363664259,
+        520
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 112
+        },
+        {
+          "name": "model.images.image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 144
+        },
+        {
+          "name": "model.images.image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 147
+        },
+        {
+          "name": "model.images.image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 150
+        },
+        {
+          "name": "model.images.image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 153
+        },
+        {
+          "name": "model.images.image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 186
+        },
+        {
+          "name": "model.images.image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "model.files",
+          "shape": 7,
+          "type": "GEMINI_INPUT_FILES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            58
+          ]
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "thought_image",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.34.6",
+        "Node name for S&R": "GeminiNanoBanana2V2"
+      },
+      "widgets_values": [
+        "",
+        "Gemini Nano Banana 2.1",
+        "auto",
+        "2K",
+        "MEDIUM",
+        740041156021637,
+        "fixed",
+        "IMAGE",
+        "You are an expert e-commerce catalog photography generation engine. You must ALWAYS produce a visual output.\n\nYour primary goal is to seamlessly dress the Model with the exact clothing provided in the input image, explicitly tailored for a professional online store.\n\nCRITICAL DIRECTIVE: You must maintain strict 1:1 visual fidelity with the input garment. Pay meticulous attention to its exact colors, cut, silhouette, fabric texture, drape, stitching, hems, and fine details. Do not alter, enhance, or hallucinate any part of the garment's design.\n\nInterpret all inputs as literal directives for a clean, commercial e-commerce product shoot.",
+        1,
+        0.95
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "model": "Gemini Nano Banana 2.1",
+        "model.aspect_ratio": "auto",
+        "model.resolution": "2K",
+        "model.thinking_level": "MEDIUM",
+        "seed": 740041156021637,
+        "control_after_generate": "fixed",
+        "response_modalities": "IMAGE",
+        "system_prompt": "You are an expert e-commerce catalog photography generation engine. You must ALWAYS produce a visual output.\n\nYour primary goal is to seamlessly dress the Model with the exact clothing provided in the input image, explicitly tailored for a professional online store.\n\nCRITICAL DIRECTIVE: You must maintain strict 1:1 visual fidelity with the input garment. Pay meticulous attention to its exact colors, cut, silhouette, fabric texture, drape, stitching, hems, and fine details. Do not alter, enhance, or hallucinate any part of the garment's design.\n\nInterpret all inputs as literal directives for a clean, commercial e-commerce product shoot.",
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 6,
+      "type": "AK_ResetCounters",
+      "pos": [
+        3656.48210924881,
+        3488.732442879084
+      ],
+      "size": [
+        301.7875470113929,
+        72.9123628777711
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_ResetCounters"
+      },
+      "widgets_values": [
+        "reset_all"
+      ],
+      "widgets_values_named": {
+        "🔄 Reset All Counters": "reset_all"
+      }
+    },
+    {
+      "id": 1,
+      "type": "AK_AutoImageListLoader",
+      "pos": [
+        5578.611664715037,
+        4456.744812102609
+      ],
+      "size": [
+        326.3046875,
+        350
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "widget": {
+            "name": "folder_path"
+          },
+          "link": 1
+        },
+        {
+          "name": "list_size",
+          "type": "INT",
+          "widget": {
+            "name": "list_size"
+          },
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": [
+            15
+          ]
+        },
+        {
+          "name": "filenames",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "name": "total_images",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "run_counter",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "total_runs",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "folder_analysis",
+          "type": "STRING",
+          "links": [
+            108
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_AutoImageListLoader"
+      },
+      "widgets_values": [
+        "C:\\",
+        "browse",
+        10,
+        "*",
+        "natural",
+        "on",
+        "start",
+        true,
+        "reset"
+      ],
+      "widgets_values_named": {
+        "folder_path": "C:\\",
+        "📂 Browse Folder": "browse",
+        "list_size": 10,
+        "file_pattern": "*",
+        "sorting": "natural",
+        "load_remainder": "on",
+        "remainder_position": "start",
+        "file_name_without_extension": true,
+        "🔄 Reset Counter": "reset"
+      }
+    },
+    {
+      "id": 14,
+      "type": "ImageResize+",
+      "pos": [
+        6066.44371794656,
+        5369.5795721470895
+      ],
+      "size": [
+        421.265625,
+        319.96875
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            150,
+            152,
+            191
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": []
+        }
+      ],
+      "title": "🔧 Image Resize 3[G3]",
+      "properties": {
+        "cnr_id": "comfyui_essentials",
+        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
+        "Node name for S&R": "ImageResize+"
+      },
+      "widgets_values": [
+        2048,
+        2048,
+        "lanczos",
+        "keep proportion",
+        "downscale if bigger",
+        0
+      ],
+      "widgets_values_named": {
+        "width": 2048,
+        "height": 2048,
+        "interpolation": "lanczos",
+        "method": "keep proportion",
+        "condition": "downscale if bigger",
+        "multiple_of": 0
+      }
+    },
+    {
+      "id": 10,
+      "type": "Primitive integer [Crystools]",
+      "pos": [
+        3660.081825219987,
+        3316.1228988545695
+      ],
+      "size": [
+        302.3167442953327,
+        111.90014592517127
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "int",
+          "type": "INT",
+          "links": [
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "title": "🪛 List Size",
+      "properties": {
+        "cnr_id": "ComfyUI-Crystools",
+        "ver": "2f18256c5b5063937106f29a8e0a7db3ae3869b7",
+        "Node name for S&R": "Primitive integer [Crystools]"
+      },
+      "widgets_values": [
+        1
+      ],
+      "widgets_values_named": {
+        "int": 1
+      }
+    },
+    {
+      "id": 41,
+      "type": "AK_GarmentModeController",
+      "pos": [
+        4437.136251514947,
+        3691.7476975651552
+      ],
+      "size": [
+        396.0215005661588,
+        350.2238179000801
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "garment_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "active_mode",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_GarmentModeController"
+      },
+      "widgets_values": [
+        "2 Garments",
+        true,
+        "apply_now",
+        "btn_1",
+        "btn_2",
+        "btn_3",
+        "btn_4"
+      ],
+      "widgets_values_named": {
+        "active_garments": "2 Garments",
+        "auto_mute_on_queue": true,
+        "👉 1 Garment  [G2..G5 Mute]": "apply_now",
+        "👉 2 Garments [G2 Active, G3..G5 Mute]": "btn_1",
+        "👉 3 Garments [G2, G3 Active, G4..G5 Mute]": "btn_2",
+        "👉 4 Garments [G2..G4 Active, G5 Mute]": "btn_3",
+        "👉 5 Garments [All Active]": "btn_4"
+      }
+    },
+    {
+      "id": 43,
+      "type": "Text Multiline",
+      "pos": [
+        4019.6605888559525,
+        3293.408878394834
+      ],
+      "size": [
+        783.7002697118032,
+        196.1138626107745
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            71,
+            72,
+            112
+          ]
+        }
+      ],
+      "title": "IMAGE PROMPT",
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "3.0.1",
+        "Node name for S&R": "Text Multiline",
+        "aux_id": "ltdrdata/was-node-suite-comfyui"
+      },
+      "widgets_values": [
+        " professional e-commerce photo of a 5 years old boy with blue grey eyes and with short blond hair with short buzz haircut , wearing this outfit,use white #ffffff color as background  color."
+      ],
+      "widgets_values_named": {
+        "text": " professional e-commerce photo of a 5 years old boy with blue grey eyes and with short blond hair with short buzz haircut , wearing this outfit,use white #ffffff color as background  color."
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "AK_FolderPicker",
+      "pos": [
+        4018.438362496925,
+        3538.834449981015
+      ],
+      "size": [
+        790.5782354009806,
+        86.79571350540846
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "title": "📂 Garment Path Master",
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_FolderPicker"
+      },
+      "widgets_values": [
+        "browse",
+        "C:\\Users\\satir\\OneDrive\\Desktop\\realtemp\\2 garments\\top"
+      ],
+      "widgets_values_named": {
+        "📂 Browse Folder": "browse",
+        "folder_path": "C:\\Users\\satir\\OneDrive\\Desktop\\realtemp\\2 garments\\top"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 65,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3650.267010486696,
+        3634.189786526332
+      ],
+      "size": [
+        317.01638697544195,
+        245.39912671786715
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 108
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "=== Auto Image List Loader Analysis ===\nTotal images found: 1\nFile pattern: *\nAll 1 images match the pattern.\n\nList size per run: 1\nFull runs: 1\nPerfect split: 1x1\n\nTotal scheduled runs: 1\nRun on Change mode: final controlled error stops the loop.\n\n--- Current run 1/1 ---\nLoading 1 image(s) from index 0\n  1. upload_ppq6-pDES22FlrJbbZqjFw.png"
+      ],
+      "widgets_values_named": {
+        "text_0": "=== Auto Image List Loader Analysis ===\nTotal images found: 1\nFile pattern: *\nAll 1 images match the pattern.\n\nList size per run: 1\nFull runs: 1\nPerfect split: 1x1\n\nTotal scheduled runs: 1\nRun on Change mode: final controlled error stops the loop.\n\n--- Current run 1/1 ---\nLoading 1 image(s) from index 0\n  1. upload_ppq6-pDES22FlrJbbZqjFw.png"
+      }
+    },
+    {
+      "id": 35,
+      "type": "Fast Groups Muter (rgthree)",
+      "pos": [
+        4879.027418810631,
+        3450.724589440378
+      ],
+      "size": [
+        621.3560374401775,
+        183.84943632067097
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 17,
+      "type": "AK_FolderPicker",
+      "pos": [
+        4884.684205154646,
+        3282.2964302524256
+      ],
+      "size": [
+        605.5142865235217,
+        102.46859611684567
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "links": [
+            54,
+            55,
+            56
+          ]
+        }
+      ],
+      "title": "📂 Output Path",
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "7b46af33713abd7a5c58ac40ac52059a7cd0275f",
+        "Node name for S&R": "AK_FolderPicker"
+      },
+      "widgets_values": [
+        "browse",
+        "C:\\Users\\satir\\OneDrive\\Desktop\\realtemp\\output2"
+      ],
+      "widgets_values_named": {
+        "📂 Browse Folder": "browse",
+        "folder_path": "C:\\Users\\satir\\OneDrive\\Desktop\\realtemp\\output2"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 75,
+      "type": "LoadImage",
+      "pos": [
+        5624.888340146785,
+        3570.923348984318
+      ],
+      "size": [
+        346.7155881753806,
+        406.15904937496725
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 2,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            186,
+            188,
+            193
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "Input model [MODEL]",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.39.2",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "e2a01cf3704eb2667a3b918f6c1fedd1.jpg",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "e2a01cf3704eb2667a3b918f6c1fedd1.jpg",
+        "upload": "image"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 76,
+      "type": "AK_TagMuter",
+      "pos": [
+        5633.658542139095,
+        3293.454695786539
+      ],
+      "size": [
+        336.0055740069678,
+        199.99413746269556
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "links": null
+        },
+        {
+          "name": "tag",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-angeloskar",
+        "ver": "ca3d186fd3f444cbdf64d0c8bae4c0364073888f",
+        "Node name for S&R": "AK_TagMuter"
+      },
+      "widgets_values": [
+        "[MODEL]",
+        "Mute",
+        "btn_active",
+        "btn_mute"
+      ],
+      "widgets_values_named": {
+        "tag": "[MODEL]",
+        "mode": "Mute",
+        "🟢 Set ACTIVE": "btn_active",
+        "🔴 Set MUTE (Disabled)": "btn_mute"
+      }
+    }
+  ],
+  "links": [
+    [
+      1,
+      7,
+      0,
+      1,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      9,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      8,
+      0,
+      5,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      10,
+      0,
+      1,
+      1,
+      "INT"
+    ],
+    [
+      5,
+      10,
+      0,
+      4,
+      1,
+      "INT"
+    ],
+    [
+      6,
+      10,
+      0,
+      5,
+      1,
+      "INT"
+    ],
+    [
+      15,
+      1,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      16,
+      4,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      54,
+      17,
+      0,
+      21,
+      1,
+      "STRING"
+    ],
+    [
+      55,
+      17,
+      0,
+      20,
+      1,
+      "STRING"
+    ],
+    [
+      56,
+      17,
+      0,
+      22,
+      1,
+      "STRING"
+    ],
+    [
+      57,
+      27,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      58,
+      24,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      59,
+      25,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      62,
+      5,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      63,
+      39,
+      0,
+      40,
+      0,
+      "IMAGE"
+    ],
+    [
+      67,
+      1,
+      1,
+      21,
+      2,
+      "STRING"
+    ],
+    [
+      68,
+      1,
+      1,
+      20,
+      2,
+      "STRING"
+    ],
+    [
+      69,
+      1,
+      1,
+      22,
+      2,
+      "STRING"
+    ],
+    [
+      108,
+      1,
+      5,
+      65,
+      0,
+      "STRING"
+    ],
+    [
+      72,
+      43,
+      0,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      146,
+      15,
+      0,
+      27,
+      1,
+      "IMAGE"
+    ],
+    [
+      149,
+      16,
+      0,
+      27,
+      2,
+      "IMAGE"
+    ],
+    [
+      152,
+      14,
+      0,
+      27,
+      3,
+      "IMAGE"
+    ],
+    [
+      155,
+      40,
+      0,
+      27,
+      4,
+      "IMAGE"
+    ],
+    [
+      188,
+      75,
+      0,
+      27,
+      5,
+      "IMAGE"
+    ],
+    [
+      112,
+      43,
+      0,
+      24,
+      0,
+      "STRING"
+    ],
+    [
+      144,
+      15,
+      0,
+      24,
+      1,
+      "IMAGE"
+    ],
+    [
+      147,
+      16,
+      0,
+      24,
+      2,
+      "IMAGE"
+    ],
+    [
+      150,
+      14,
+      0,
+      24,
+      3,
+      "IMAGE"
+    ],
+    [
+      153,
+      40,
+      0,
+      24,
+      4,
+      "IMAGE"
+    ],
+    [
+      186,
+      75,
+      0,
+      24,
+      5,
+      "IMAGE"
+    ],
+    [
+      71,
+      43,
+      0,
+      25,
+      0,
+      "STRING"
+    ],
+    [
+      189,
+      15,
+      0,
+      25,
+      1,
+      "IMAGE"
+    ],
+    [
+      190,
+      16,
+      0,
+      25,
+      2,
+      "IMAGE"
+    ],
+    [
+      191,
+      14,
+      0,
+      25,
+      3,
+      "IMAGE"
+    ],
+    [
+      192,
+      40,
+      0,
+      25,
+      4,
+      "IMAGE"
+    ],
+    [
+      193,
+      75,
+      0,
+      25,
+      5,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "nanobanana flash",
+      "bounding": [
+        8008.073141120845,
+        4466.191002636832,
+        1016.2724595258296,
+        611.526587219355
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "gpt image 2",
+      "bounding": [
+        8003.546046621195,
+        5110.75192507008,
+        1021.1322012610526,
+        545.4522982632434
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "seedream",
+      "bounding": [
+        8008.5290992394275,
+        5727.767955559614,
+        1021.0173743625328,
+        549.0406319665462
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6115909044841605,
+      "offset": [
+        -3912.46040193909,
+        -2892.7262090988825
+      ]
+    },
+    "reroutes": [
+      {
+        "id": 1,
+        "pos": [
+          8533.654199922557,
+          5063.09769023722
+        ],
+        "linkIds": [
+          67,
+          68,
+          69
+        ]
+      },
+      {
+        "id": 2,
+        "pos": [
+          7661.500240619814,
+          5147.747493865774
+        ],
+        "linkIds": [
+          71,
+          72,
+          112
+        ]
+      }
+    ],
+    "linkExtensions": [
+      {
+        "id": 67,
+        "parentId": 1
+      },
+      {
+        "id": 68,
+        "parentId": 1
+      },
+      {
+        "id": 69,
+        "parentId": 1
+      },
+      {
+        "id": 72,
+        "parentId": 2
+      },
+      {
+        "id": 112,
+        "parentId": 2
+      },
+      {
+        "id": 71,
+        "parentId": 2
+      }
+    ],
+    "frontendVersion": "1.53.10"
+  },
+  "version": 0.4,
+  "seed_widgets": {
+    "24": 5,
+    "25": 8
+  }
+}
